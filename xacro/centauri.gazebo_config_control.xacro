@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="config_ctr_gazebo">
+      
+        <ros2_control name="GazeboSystem" type="system">
+            <hardware>
+               <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+            </hardware>
+                <joint name="joint1">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint>
+
+                <joint name="joint2">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint>
+                <joint name="joint3">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint>
+                <joint name="joint4">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint>
+                <joint name="joint5">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint>
+                <joint name="joint6">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint> 
+                    <joint name="joint_gear1">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint> 
+                    <joint name="joint_pinza1">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint> 
+                    <joint name="joint_gear2">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint>
+                    <joint name="joint_pinza2">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint> 
+                    <joint name="joint_pivot1">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint>
+                    <joint name="joint_pivot2">
+                <command_interface name="position">
+                    <param name="min">-10</param>
+                    <param name="max">10</param>
+                </command_interface>
+                <state_interface name="position"/>
+                <state_interface name="velocity"/>
+                <state_interface name="effort"/>
+                </joint> 
+
+        </ros2_control>
+
+        		<gazebo>
+			<plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+        		<!--<robot_sim_type>gazebo_ros2_control/DefaultRobotHWSim</robot_sim_type> -->
+				<robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+				<parameters>$(find centauri_6dof)/config/simple_controller.yaml</parameters>
+		    </plugin>
+		</gazebo>
+
+    </xacro:macro>
+
+</robot>

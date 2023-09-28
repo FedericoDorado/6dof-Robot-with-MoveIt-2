@@ -1,0 +1,2 @@
+robot_description: "/root/ros2_ws/src/centauri_6dof/xacro/centauri.urdf.xacro"
+robot_description_semantic: "/root/ros2_ws/src/centauri_6dof_moveit_config/config/centauri6dof.srdf"

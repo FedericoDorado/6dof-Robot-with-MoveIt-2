@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="centauri6dof" >
+
+
+  <xacro:arg name="namespace" default=""/>
+
+
+  <!-- <xacro:arg name="initial_positions_file" default="initial_positions.yaml" /> -->
+
+     <xacro:include filename="$(find centauri_6dof)/xacro/centauri.xacro" />
+
+
+      <!-- Import doosan urdf file -->
+    <!-- <xacro:include filename="$(find centauri_6dof)/description/urdf/a0912.blue.urdf" /> -->
+
+    <!-- Import doosan ros2_control description -->
+    <!-- <xacro:include filename="$(find centauri_6dof)/config/doosan.ros2_control.xacro" /> -->
+
+  <xacro:centauri6dof namespace="$(arg namespace)"/>
+
+
+</robot>
+

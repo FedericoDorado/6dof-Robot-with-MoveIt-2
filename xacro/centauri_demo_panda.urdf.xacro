@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="centauri6dof">
+
+    <!-- Import centauri urdf file -->
+    <xacro:include filename="$(find centauri_6dof)/models/3_centauri_2023.urdf" />
+
+      <!-- Import centauri ros2_control description -->
+    <!-- <xacro:include filename="$(find centauri_6dof)/config/centauri.ros2_control.xacro" /> -->
+
+</robot>
