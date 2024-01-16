@@ -25,11 +25,3 @@ To test this package, its installation will be facilitated using Docker, where a
 MoveIt 2 is running on Rviz 2, In the lower left corner you can  change the values. Choose the planning group for the arm or hand, the predefined goals and click on the Pan and Execute button.
 
 Also you can move the robot manually to a new pose using the mause clicking and mantaining on Centauri's hand.
-
-
-
-###**Table of Contents**
-
-[TOCM]
-
-[TOC]
