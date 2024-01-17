@@ -3,7 +3,7 @@ Planning and executing trayectories on UAO'S Centauri 6DOF using ROS 2 and Movei
 
 ![](https://github.com/FedericoDorado/6dof-Robot-with-MoveIt-2/blob/main/Captura%20desde%202024-01-16%2011-09-36.png?raw=true)
 
-[Video Demo]([https://www.youtube.com/watch?v=MdDETKCAYUI](https://youtu.be/_tcTTSba5mw "Video Demo")
+[Demo video](https://www.youtube.com/watch?v=_tcTTSba5mw "Demo video")
 
 ## Prerequisites
 Have previously installed Docker
